@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts "Cleaning database..."
+Project.destroy_all
+
+puts "Creating projects..."
+a_white = { title: "A White Workshop", description: "Website design for carpenter and furniture maker Alexander White", }
+rechair =  { title: "Rechair", description: "Final project on Le Wagon's web development course. A web app that allows users to book spaces in university lecture theatres", }
+
+[ a_white, rechair ].each do |attributes|
+  project = Project.create!(attributes)
+  puts "Created #{project.title}"
+end
+puts "Finished!"
