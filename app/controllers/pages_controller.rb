@@ -6,5 +6,6 @@ class PagesController < ApplicationController
   end
 
   def home
+    @projects = Project.all
   end
 end

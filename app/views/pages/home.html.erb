@@ -7,7 +7,14 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-6">
-      <%= "Lorem ipsum dolor sit amet, consectetur adipisicing elit " * 100 %>
+      <% @projects.each do |project| %>
+        <%= image_tag awhite_img.png %>
+        <br>
+        <strong> <%= project.title %> </strong>
+        <br>
+        <p> <%= project.description %></p>
+      <% end %> %>
+      <%= "Lorem ipsum dolor sit amet, consectetur adipisicing elit " * 10%>
     </div>
   </div>
 </div>
