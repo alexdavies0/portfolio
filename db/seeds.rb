@@ -10,10 +10,12 @@ puts "Cleaning database..."
 Project.destroy_all
 
 puts "Creating projects..."
-a_white = { title: "A White Workshop", description: "Website design for carpenter and furniture maker Alexander White", image_url: "awhite_url.png"}
+a_white = { title: "A White Workshop", description: "Website design for carpenter and furniture maker Alexander White", image_url: "awhite_img.png"}
 rechair =  { title: "Rechair", description: "Final project on Le Wagon's web development course. A web app that allows users to book spaces in university lecture theatres", image_url: "rechair_img.png"}
+replay = { title: "Replay", description: "First project on Le Wagon's web development course. A web app modelled on Air BnB that allows users to borrow board games", image_url: "replay_img.png"}
+carly =  { title: "Carly Sandland", description: "Website built on Wordpress for doula and birth practitioner Carly Sandland", image_url: "carly_img.png"}
 
-[ a_white, rechair ].each do |attributes|
+[ a_white, rechair, replay, carly].each do |attributes|
   project = Project.create!(attributes)
   puts "Created #{project.title}"
 end

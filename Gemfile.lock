@@ -201,6 +201,7 @@ DEPENDENCIES
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.5)
   sass-rails (>= 6)
+  sassc-rails
   simple_form!
   spring
   sqlite3 (~> 1.4)
