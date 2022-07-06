@@ -3,6 +3,10 @@
   background: white;
   background-color: transparent;
   transition: 0.5s background-color ease;
+  height: 6vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .navbar-lewagon .navbar-collapse {
