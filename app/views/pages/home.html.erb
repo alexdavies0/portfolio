@@ -1,19 +1,21 @@
-<div class="sidebar">
-  <h1>Alex Davies</h1>
-  <p>Projects</p>
-  <p>Contact</p>
-</div>
-
 <div class="container">
-  <div class="row justify-content-center">
-    <div class="col-6">
-      <% @projects.each do |p| %>
-        <%= image_tag "#{p.image_url}", height: "400px" %>
-        <br>
-        <strong> <%= p.title %> </strong>
-        <br>
-        <p> <%= p.description %></p>
-      <% end %> %>
+  <div class="sidebar">
+    <h1>Alex Davies</h1>
+    <p>Projects</p>
+    <p>Contact</p>
+  </div>
+
+  <div class="main">
+    <div class="row">
+        <% @projects.each do |p| %>
+          <div class="col-6">
+            <%= image_tag "#{p.image_url}", height: "400px" %>
+            <br>
+            <strong> <%= p.title %> </strong>
+            <br>
+            <p> <%= p.description %></p>
+          </div>
+        <% end %>
     </div>
   </div>
 </div>
