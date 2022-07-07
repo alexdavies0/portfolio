@@ -5,11 +5,15 @@
   <div class="row">
       <% @projects.each do |p| %>
         <div class="col-6">
-          <%= image_tag "#{p.image_url}", height: "400px" %>
-          <br>
-          <strong> <%= p.title %> </strong>
-          <br>
-          <p> <%= p.description %></p>
+          <div class="project-card">
+            <%= image_tag "#{p.image_url}", height: "400px" %>
+            <br>
+              <div class="project-card-text">
+              <strong> <%= p.title %> </strong>
+              <br>
+              <p> <%= p.description %></p>
+            </div>
+          </div>
         </div>
       <% end %>
   </div>
