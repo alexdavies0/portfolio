@@ -1,12 +1,12 @@
 .project-card{
-  padding: 15px;
-  box-shadow: 2px 2px 12px -8px rgba(0, 0, 0, 0.48);
+  padding: 45px;
 }
 
 .project-card img{
   max-width: 100%;
   height: auto;
-  overflow: hidden
+  overflow: hidden;
+  box-shadow: 10px 10px 13px -3px rgba(224, 224, 224, 0.39);
 }
 
 .project-card-text{
