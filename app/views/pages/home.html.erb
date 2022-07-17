@@ -2,18 +2,31 @@
 
 
 <div class="main">
-  <div class="row">
-      <% @projects.each do |p| %>
-        <div class="col-6">
-          <div class="project-card">
-            <%= image_tag "#{p.image_url}", height: "400px" %>
-            <br>
-              <div class="project-card-text">
-              <h5> <%= p.title %> </h5>
-              <p> <%= p.description %></p>
+  <div class="landing">
+  <br>
+  <br>
+  <br>
+    <h3><center>Full Stack web developer.</center></h3>
+    <h3><center>Former artist and educator</center></h3>
+    <h3><center>Based in London</center></h3>
+  </div>
+
+  <br>
+  <div class="projects">
+    <h3><center>Projects</center></h3>
+    <div class="row">
+        <% @projects.each do |p| %>
+          <div class="col-23 col-md-6">
+            <div class="project-card">
+              <%= image_tag "#{p.image_url}", height: "400px" %>
+              <br>
+                <div class="project-card-text">
+                <h5> <%= p.title %> </h5>
+                <p> <%= p.description %></p>
+              </div>
             </div>
           </div>
-        </div>
-      <% end %>
+        <% end %>
+    </div>
   </div>
 </div>
