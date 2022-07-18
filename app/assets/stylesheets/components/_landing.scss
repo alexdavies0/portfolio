@@ -1,8 +1,15 @@
 .landing{
   background-image: "carousel_test_1.png";
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  h3{
-    
-  }
+.landing_text{
+//   display: flex;
+//   // align-items: center;
+  justify-content: center;
+  background-color: rgb(250, 135, 210);
+  padding: 50px;
 }

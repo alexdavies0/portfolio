@@ -3,17 +3,19 @@
 
 <div class="main">
   <div class="landing">
-  <br>
-  <br>
-  <br>
-    <h3><center>Full Stack web developer.</center></h3>
-    <h3><center>Former artist and educator</center></h3>
-    <h3><center>Based in London</center></h3>
+
+    <div class="landing_text">
+      <div class="landing_text_item"><h3><center>Full Stack web developer.</center></h3></div>
+      <br>
+      <div class="landing_text_item"><h3><center>Artist and educator.</center></h3></div>
+      <br>
+      <div class="landing_text_item"><h3><center>Based in London/Worldwide.</center></h3></div>
+    </div>
   </div>
 
   <br>
   <div class="projects">
-    <h3><center>Projects</center></h3>
+    <a id="project_section"><h3><center>Projects</center></h3></a>
     <div class="row">
         <% @projects.each do |p| %>
           <div class="col-23 col-md-6">
@@ -28,5 +30,9 @@
           </div>
         <% end %>
     </div>
+  </div>
+  <div class="contact">
+    <a id="contact_section"><h3><center>Contact</center></h3></a>
+
   </div>
 </div>

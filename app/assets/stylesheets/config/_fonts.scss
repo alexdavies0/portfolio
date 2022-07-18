@@ -17,3 +17,20 @@ $headers-font: 'Libre Baskerville', serif;
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
+
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:link {
+  text-decoration: none !important;
+  color: inherit !important;
+ }
+
+ a:link :hover {
+  background-color: rgb(250, 135, 210);
+  transform: scale(1.05);
+  opacity: 100;
+  transition: transform 400ms, opacity 400ms;
+ }
