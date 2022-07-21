@@ -1,1 +1,14 @@
 // Specific CSS for your home-page
+.section_head{
+  display: flex;
+  align-items: center;
+}
+.section_title{
+  background-color: $pink;
+  color: $white;
+  box-shadow: 4px 4px 0px 0px rgba(30, 221, 136, 1);
+  width: min-content;
+  height: auto;
+  margin: auto;
+
+}
