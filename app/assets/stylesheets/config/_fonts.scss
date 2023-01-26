@@ -18,6 +18,9 @@ $headers-font: 'Libre Baskerville', serif;
 // }
 // $my-font: "Font Name";
 
+// a {
+//   color: red
+// }
 
 a,
 a:hover,
@@ -28,7 +31,7 @@ a:link {
   color: inherit !important;
  }
 
- a:link :hover {
+ a:hover {
   background-color: rgb(250, 135, 210);
   box-shadow: 3px 3px 0px 0px rgba(30, 221, 136, 1);
   transform: scale(1.05);
