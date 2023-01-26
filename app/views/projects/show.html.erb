@@ -1,2 +1,3 @@
-<p>You are viewing the page for <%= @project.title %></p>
-<%= image_tag "#{@project.image_url}", height: "400px" %>
+<center><div id="show-project-title"><h3><%= @project.title %></h3></div></center>
+<center><div id="show-project-description"><p><%= @project.description %></p></div></center>
+<center><div id="show-project-image"><%= image_tag "#{@project.image_url}", height: "400px" %></div></center>
