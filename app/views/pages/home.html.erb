@@ -23,7 +23,9 @@
         <% @projects.each do |p| %>
           <div class="col-23 col-md-6">
             <div class="project-card">
+            <%= link_to project_path(p) do %>
               <%= image_tag "#{p.image_url}", height: "400px" %>
+            <% end %>
               <br>
                 <div class="project-card-text">
                 <h5> <%= p.title %> </h5>
@@ -44,8 +46,5 @@
     <br>
       <h4><center>For information and requests please get in touch by emailing <a href="mailto:alxdavies@gmail.com">alxdavies@gmail.com</a></center></h4>
     </div>
-
   </div>
-
-
 </div>
