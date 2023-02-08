@@ -23,13 +23,18 @@
         <% @projects.each do |p| %>
           <div class="col-23 col-md-6">
             <div class="project-card">
-            <%= link_to project_path(p) do %>
-              <%= image_tag "#{p.image_url}", height: "400px" %>
-            <% end %>
+
+
+              <%= link_to project_path(p) do %>
+                <div class="project-image"><%= image_tag "#{p.image_url}", height: "400px" %>
+                </div>
+
+              <% end %>
+
+
               <br>
-                <div class="project-card-text">
-                <h5> <%= p.title %> </h5>
-                <p> <%= p.description %></p>
+              <div class="project-card-text">
+                <h6> <%= p.title %> </h6>
               </div>
             </div>
           </div>

@@ -1,0 +1,30 @@
+.project-card {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+
+.project-card-text {
+  position: absolute;
+  opacity: 1.0;
+  background-color: rgb(250, 135, 210);
+  box-shadow: 3px 3px 0px 0px rgba(30, 221, 136, 1);
+  max-width: 180px;
+  font-size: calc(0.75em + 1vmin);
+}
+
+.project-image {
+opacity: 80%;
+}
+
+.project-image:hover {
+  opacity: 100%;
+}
+
+.project-image:hover > .project-card-text {
+  opacity: 0.0;
+    transition: background-color 800ms, opacity 800ms;
+    transition: box-shadow 470ms, opacity 470ms;
+}
