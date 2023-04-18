@@ -1,19 +1,10 @@
 .project-card {
   position: relative;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content:center;
+  align-items:center;
 }
 
-
-.project-card-text {
-  position: absolute;
-  opacity: 1.0;
-  background-color: rgb(250, 135, 210);
-  box-shadow: 3px 3px 0px 0px rgba(30, 221, 136, 1);
-  max-width: 180px;
-  font-size: calc(0.75em + 1vmin);
-}
 
 .project-image {
 opacity: 80%;
